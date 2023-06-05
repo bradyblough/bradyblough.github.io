@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    position: relative; /* Set position to allow absolute positioning of the image */
+  }
+
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2) url("images/solar_flare_bg.jpeg") no-repeat center center fixed;
+    opacity: 0.2; /* Adjust the opacity value to make the image fainter */
+    pointer-events: none; /* Prevent the image from interfering with user interactions */
+    z-index: -1; /* Position the image behind other elements */
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
