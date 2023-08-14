@@ -1,9 +1,9 @@
 body {
     font-family: Roboto;
     font-size: 20px;
-    margin: 100px;
     background-color: black;
     color: white;
+    padding: 20px; 
 }
 
 h1 {
@@ -21,11 +21,15 @@ label {
 }
 
 input {
-    width: 100px;
-}
+    width: 100%; 
+    padding: 5px; 
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+} 
 
 button {
     margin-top: 10px;
+    padding: 8px 15px; 
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -33,13 +37,18 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 input[type="number"] {
     -moz-appearance: textfield; 
     appearance: textfield;
 }
 
 @media (max-width: 768px) {
-    .body {
-        margin: 0;
+    body {
+        padding: 10px;
+    }
+    
+    input, button {
+        margin-top: 5px; 
     }
 }
