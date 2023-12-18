@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+  border: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 55px;
+  left: 190px; 
+  width: 200px;
+  height: 5px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#redshift {
+  font-size: 25px;
+  top: 45px;
+  left: 85px;
+  position: absolute;
+}
+
+#explanation {
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  font-size: 20px;
+  display: none;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  max-width: 400px;
+  color: white;
+}
+
+#showExplanationBtn {
+  position: absolute;
+  top: 45px;
+  font-size: 25px;
+  right: 65px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
