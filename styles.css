@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:900|Roboto+Mono:300,400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
-/* Print Styles */
 @media print {
   *,
   :after,
@@ -60,7 +59,6 @@ abbr[title] {
   margin-bottom: 2px;
 }
 
-/* Visibility Classes */
 .visible-print-block {
   display: none !important;
 }
@@ -359,7 +357,6 @@ textarea {
   padding-left: 20%;
 }
 
-/*# sourceMappingURL=main.70a66962.map*/
 .projects {
   margin-bottom: 25px;
 }
@@ -368,7 +365,6 @@ textarea {
   text-align: center !important;
 }
 
-/* Flexbox utilities for button alignment */
 .card-container {
   display: flex;
   flex-direction: column;
@@ -389,12 +385,11 @@ textarea {
   background-color: transparent !important;
 }
 
-/* Fix the hamburger menu icon at the top of the navbar */
 @media (max-width: 1000px) {
   .navbar-toggle .icon-bar {
     position: sticky !;
-    top: 10px; /* Adjust this value as needed */
-    right: 10px; /* Adjust this value as needed */
+    top: 10px; 
+    right: 10px; 
   }
 }
 
