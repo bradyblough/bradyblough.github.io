@@ -19,7 +19,7 @@ input[type="range"] {
   appearance: none;
   position: absolute;
   top: 55px;
-  left: 190px; 
+  left: 190px;
   width: 200px;
   height: 5px;
   background-color: #ddd;
@@ -58,4 +58,19 @@ input[type="range"] {
   border: none;
   color: white;
   border-radius: 5px;
+}
+
+/* Added resizing on mobile */
+@media (max-width: 600px) {
+  #showExplanationBtn {
+    top: 70px; 
+    right: 289px; 
+  }
+}
+
+@media (max-width: 600px) {
+  #explanation{
+    top: 110px; 
+    right: 350px; 
+  }
 }
