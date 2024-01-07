@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let isMoving = false;
     let selectedVector = null;
     let moveStartPoint, moveEndPoint;
-    const tolerance = 5;
+    const tolerance = 0;
   
     canvas.addEventListener('mousedown', handleMouseDown);
     canvas.addEventListener('mousemove', handleMouseMove);
