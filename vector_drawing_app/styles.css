@@ -1,52 +1,59 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  canvas, #vectorCanvas {
-    border: 2px solid #3498db;
-    cursor: crosshair;
-  }
-  
-  #vectorInfo, #legend {
-    position: absolute;
-    padding: 10px;
-    border: 1px solid #000;
-    background-color: #fff;
-  }
-  
-  #vectorInfo {
-    top: 10px;
-    left: 10px;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #3498db;
-  }
-  
-  #legend {
-    bottom: 10px;
-    left: 10px;
-  }
-  
-  #calculateButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    font-size: 16px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  #calculateButton:hover {
-    background-color: #27ae60;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Style the button container */
+.buttons {
+  position: absolute;
+  top: 10px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the buttons */
+button {
+  display: block;
+  margin-right: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* Style the canvas and info divs */
+canvas, #vectorCanvas {
+  border: 2px solid #3498db;
+  cursor: crosshair;
+}
+
+#vectorInfo, #legend {
+  position: absolute;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+#vectorInfo {
+  top: 10px;
+  left: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #3498db;
+}
+
+#legend {
+  bottom: 10px;
+  left: 10px;
+}
