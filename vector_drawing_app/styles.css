@@ -1,4 +1,4 @@
-body {
+=body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,6 +34,8 @@ button:hover {
 
 /* Style the canvas and info divs */
 canvas, #vectorCanvas {
+  margin-top: 20px;
+  margin-left: 1000px;
   border: 2px solid #3498db;
   cursor: crosshair;
 }
@@ -56,4 +58,13 @@ canvas, #vectorCanvas {
 #legend {
   bottom: 10px;
   left: 10px;
+  color: #3498db;
 }
+
+#explanation {
+  text-align: center;
+  margin-top: 200px; 
+  font-size: 20px;
+  background-color: #fff;
+}
+
