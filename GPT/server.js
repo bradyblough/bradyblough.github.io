@@ -1,4 +1,3 @@
-// server.js
 const express = require("express");
 const multer = require("multer");
 const openai = require("openai");
@@ -9,13 +8,6 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", 'https://bradyblough.github.io/GPT/public');
-  res.setHeader("Access-Control-Allow-Methods", "OPTIONS, POST");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
 
 openai.apiKey = "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";
 
