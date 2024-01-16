@@ -13,7 +13,7 @@ async function submitQuestion() {
     formData.append('question', question);
 
     try {
-        const response = await fetch('/upload', {
+        const response = await fetch('https://gptpdf-jdmkrpce3-bradybloughs-projects.vercel.app/', {
             method: 'POST',
             body: formData,
         });
