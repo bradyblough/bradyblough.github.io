@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vector Drawing App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="buttons">
+    <button id="calculateButton">Calculate Sum</button>
+    <button id="deleteButton" disabled>Delete</button>
+  </div>
+  <div class="info-container">
+    </p>
+    <div id="vectorInfo"></div>
+    <div id="legend">Legend: Arrow indicates vector direction</div>
+    <div id="explanation">
+      <h2>Head-to-Tail Method</h2>
+      <p>
+        The head-to-tail method, also known as the tip-to-tail method, is a graphical way to add or subtract vectors.
+        In this method, the tail of the second vector is placed at the head of the first vector to find the resultant vector.
+      </p>
+    </div>
+  </div>
+  <canvas id="vectorCanvas" width="600" height="400"></canvas>
+  <script src="index.js"></script>
+</body>
+</html>
