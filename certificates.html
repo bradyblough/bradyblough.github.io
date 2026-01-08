@@ -19,20 +19,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
   <style>
-    .section-container {
-      padding-top: 80px;
-    }
+    .section-container { padding-top: 80px; }
 
+    /* --- Fix template "card overlay" behavior on THIS page --- */
     .card-container {
-      margin-bottom: 35px;
+      position: static !important;
+      margin-top: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
     }
 
-    .btn-container .btn {
-      margin-right: 8px;
-      margin-top: 8px;
-    }
+    /* Each certificate block spacing */
+    .cert-block { margin-bottom: 35px; }
 
-    /* Make certificate images a consistent size */
+    /* Make all certificate images render the same visual size */
     .cert-img-container {
       width: 100%;
       height: 240px;
@@ -41,20 +42,18 @@
       justify-content: center;
       background-color: #fafafa;
       border: 1px solid #ddd;
-      margin-bottom: 12px;
       padding: 10px;
+      margin-bottom: 12px;
     }
 
     .cert-img-container img {
       max-height: 100%;
       max-width: 100%;
       object-fit: contain;
+      display: block;
     }
 
-    /* Add spacing between rows */
-    .cert-row {
-      margin-top: 20px;
-    }
+    .btn-container .btn { margin-right: 8px; margin-top: 8px; }
   </style>
 </head>
 
@@ -94,7 +93,6 @@
         <div class="col-sm-8 col-sm-offset-2">
           <div class="text-center projects">
             <h1 class="h2 section-title text-center-xs">Certificates</h1>
-            <p>Formal coursework in astronomy, cosmology, and scientific computing.</p>
           </div>
         </div>
       </div>
@@ -111,13 +109,13 @@
       </div>
 
       <!-- ROW 1 -->
-      <div class="row cert-row">
+      <div class="row">
 
-        <!-- freeCodeCamp Scientific Computing with Python -->
-        <div class="col-sm-6">
+        <!-- freeCodeCamp -->
+        <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
-            <img src="./assets/images/certificates_website/reecodecamp_scientific_python.png"
-              alt="Scientific Computing with Python Certification - freeCodeCamp">
+            <img src="./assets/images/certificates_website/freecodecamp_scientific_python.png"
+                 alt="Scientific Computing with Python Certification - freeCodeCamp">
           </div>
 
           <div class="card-container">
@@ -128,16 +126,16 @@
             </p>
             <div class="btn-container">
               <a href="https://www.freecodecamp.org/certification/bradyblough/scientific-computing-with-python-v7"
-                target="_blank" rel="noopener" class="btn btn-default">Verify Certificate</a>
+                 target="_blank" rel="noopener" class="btn btn-default">Verify Certificate</a>
             </div>
           </div>
         </div>
 
-        <!-- Astronomy: Exploring Time and Space -->
-        <div class="col-sm-6">
+        <!-- Arizona -->
+        <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera YC67X2ZS7V6Z-1.png"
-              alt="Astronomy: Exploring Time and Space Certificate">
+                 alt="Astronomy: Exploring Time and Space Certificate">
           </div>
 
           <div class="card-container">
@@ -148,7 +146,7 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/astro/home/info" target="_blank" rel="noopener"
-                class="btn btn-default">Course Info</a>
+                 class="btn btn-default">Course Info</a>
             </div>
           </div>
         </div>
@@ -156,13 +154,13 @@
       </div>
 
       <!-- ROW 2 -->
-      <div class="row cert-row">
+      <div class="row">
 
-        <!-- From the Big Bang to Dark Energy -->
-        <div class="col-sm-6">
+        <!-- Tokyo -->
+        <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera 75WJA6YMAT9C-1.png"
-              alt="From the Big Bang to Dark Energy Certificate">
+                 alt="From the Big Bang to Dark Energy Certificate">
           </div>
 
           <div class="card-container">
@@ -173,18 +171,18 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/big-bang/home/info" target="_blank" rel="noopener"
-                class="btn btn-default">Course Info</a>
+                 class="btn btn-default">Course Info</a>
               <a href="https://coursera.org/verify/75WJA6YMAT9C" target="_blank" rel="noopener"
-                class="btn btn-default">Credential</a>
+                 class="btn btn-default">Credential</a>
             </div>
           </div>
         </div>
 
-        <!-- The Science of the Solar System -->
-        <div class="col-sm-6">
+        <!-- Caltech -->
+        <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera JGDSZXVZ8BXV-1.png"
-              alt="The Science of the Solar System Certificate">
+                 alt="The Science of the Solar System Certificate">
           </div>
 
           <div class="card-container">
@@ -195,7 +193,7 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/solar-system/home/info" target="_blank" rel="noopener"
-                class="btn btn-default">Course Info</a>
+                 class="btn btn-default">Course Info</a>
             </div>
           </div>
         </div>
@@ -203,13 +201,13 @@
       </div>
 
       <!-- ROW 3 -->
-      <div class="row cert-row">
+      <div class="row">
 
         <!-- AstroTech -->
-        <div class="col-sm-6">
+        <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera PF4QMQVP7DN3-1.png"
-              alt="AstroTech Certificate">
+                 alt="AstroTech Certificate">
           </div>
 
           <div class="card-container">
@@ -220,16 +218,16 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/astronomy-technology/home/info" target="_blank" rel="noopener"
-                class="btn btn-default">Course Info</a>
+                 class="btn btn-default">Course Info</a>
             </div>
           </div>
         </div>
 
         <!-- Data-driven Astronomy -->
-        <div class="col-sm-6">
+        <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera UA5TNAYJ6FTE-1.png"
-              alt="Data-driven Astronomy Certificate">
+                 alt="Data-driven Astronomy Certificate">
           </div>
 
           <div class="card-container">
@@ -240,7 +238,7 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/data-driven-astronomy/home/info" target="_blank" rel="noopener"
-                class="btn btn-default">Course Info</a>
+                 class="btn btn-default">Course Info</a>
             </div>
           </div>
         </div>
