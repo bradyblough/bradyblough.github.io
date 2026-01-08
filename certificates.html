@@ -31,6 +31,30 @@
       margin-right: 8px;
       margin-top: 8px;
     }
+
+    /* Make certificate images a consistent size */
+    .cert-img-container {
+      width: 100%;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fafafa;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+      padding: 10px;
+    }
+
+    .cert-img-container img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    /* Add spacing between rows */
+    .cert-row {
+      margin-top: 20px;
+    }
   </style>
 </head>
 
@@ -76,7 +100,7 @@
       </div>
 
       <!-- INTRO -->
-      <div class="row content-row">
+      <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center-xs">
           <p>
             I’m committed to continuous learning, particularly in space science and scientific software.
@@ -86,13 +110,15 @@
         </div>
       </div>
 
-      <!-- CERTIFICATES GRID -->
-      <div class="row">
+      <!-- ROW 1 -->
+      <div class="row cert-row">
 
         <!-- freeCodeCamp Scientific Computing with Python -->
         <div class="col-sm-6">
-          <img src="./assets/images/certificates_website/freecodecamp_scientific_python.png"
-               alt="Scientific Computing with Python Certification - freeCodeCamp" class="img-responsive">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/reecodecamp_scientific_python.png"
+              alt="Scientific Computing with Python Certification - freeCodeCamp">
+          </div>
 
           <div class="card-container">
             <h3>Scientific Computing with Python | freeCodeCamp</h3>
@@ -102,15 +128,17 @@
             </p>
             <div class="btn-container">
               <a href="https://www.freecodecamp.org/certification/bradyblough/scientific-computing-with-python-v7"
-                 target="_blank" rel="noopener" class="btn btn-default">Verify Certificate</a>
+                target="_blank" rel="noopener" class="btn btn-default">Verify Certificate</a>
             </div>
           </div>
         </div>
 
         <!-- Astronomy: Exploring Time and Space -->
         <div class="col-sm-6">
-          <img src="./assets/images/certificates_website/Coursera YC67X2ZS7V6Z-1.png"
-               alt="Astronomy: Exploring Time and Space Certificate" class="img-responsive">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera YC67X2ZS7V6Z-1.png"
+              alt="Astronomy: Exploring Time and Space Certificate">
+          </div>
 
           <div class="card-container">
             <h3>Astronomy: Exploring Time and Space | University of Arizona</h3>
@@ -120,15 +148,22 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/astro/home/info" target="_blank" rel="noopener"
-                 class="btn btn-default">Course Info</a>
+                class="btn btn-default">Course Info</a>
             </div>
           </div>
         </div>
 
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="row cert-row">
+
         <!-- From the Big Bang to Dark Energy -->
         <div class="col-sm-6">
-          <img src="./assets/images/certificates_website/Coursera 75WJA6YMAT9C-1.png"
-               alt="From the Big Bang to Dark Energy Certificate" class="img-responsive">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera 75WJA6YMAT9C-1.png"
+              alt="From the Big Bang to Dark Energy Certificate">
+          </div>
 
           <div class="card-container">
             <h3>From the Big Bang to Dark Energy | The University of Tokyo</h3>
@@ -138,17 +173,19 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/big-bang/home/info" target="_blank" rel="noopener"
-                 class="btn btn-default">Course Info</a>
+                class="btn btn-default">Course Info</a>
               <a href="https://coursera.org/verify/75WJA6YMAT9C" target="_blank" rel="noopener"
-                 class="btn btn-default">Credential</a>
+                class="btn btn-default">Credential</a>
             </div>
           </div>
         </div>
 
         <!-- The Science of the Solar System -->
         <div class="col-sm-6">
-          <img src="./assets/images/certificates_website/Coursera JGDSZXVZ8BXV-1.png"
-               alt="The Science of the Solar System Certificate" class="img-responsive">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera JGDSZXVZ8BXV-1.png"
+              alt="The Science of the Solar System Certificate">
+          </div>
 
           <div class="card-container">
             <h3>The Science of the Solar System | Caltech</h3>
@@ -158,15 +195,22 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/solar-system/home/info" target="_blank" rel="noopener"
-                 class="btn btn-default">Course Info</a>
+                class="btn btn-default">Course Info</a>
             </div>
           </div>
         </div>
 
+      </div>
+
+      <!-- ROW 3 -->
+      <div class="row cert-row">
+
         <!-- AstroTech -->
         <div class="col-sm-6">
-          <img src="./assets/images/certificates_website/Coursera PF4QMQVP7DN3-1.png"
-               alt="AstroTech Certificate" class="img-responsive">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera PF4QMQVP7DN3-1.png"
+              alt="AstroTech Certificate">
+          </div>
 
           <div class="card-container">
             <h3>AstroTech: Science and Technology Behind Astronomical Discovery | University of Edinburgh</h3>
@@ -176,15 +220,17 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/astronomy-technology/home/info" target="_blank" rel="noopener"
-                 class="btn btn-default">Course Info</a>
+                class="btn btn-default">Course Info</a>
             </div>
           </div>
         </div>
 
         <!-- Data-driven Astronomy -->
         <div class="col-sm-6">
-          <img src="./assets/images/certificates_website/Coursera UA5TNAYJ6FTE-1.png"
-               alt="Data-driven Astronomy Certificate" class="img-responsive">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera UA5TNAYJ6FTE-1.png"
+              alt="Data-driven Astronomy Certificate">
+          </div>
 
           <div class="card-container">
             <h3>Data-driven Astronomy | The University of Sydney</h3>
@@ -194,13 +240,12 @@
             </p>
             <div class="btn-container">
               <a href="https://www.coursera.org/learn/data-driven-astronomy/home/info" target="_blank" rel="noopener"
-                 class="btn btn-default">Course Info</a>
+                class="btn btn-default">Course Info</a>
             </div>
           </div>
         </div>
 
       </div>
-      <!-- END GRID -->
 
     </div>
   </div>
@@ -210,4 +255,5 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
