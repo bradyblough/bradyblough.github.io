@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="About Brady Blough - Software Engineer" />
-  <meta name="google" content="notranslate" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brady Blough - Certificates">
+  <meta name="author" content="Brady Blough">
+  <meta name="msapplication-tap-highlight" content="no">
 
-  <meta name="msapplication-tap-highlight" content="no" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link rel="icon" href="./assets/favicon.ico">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png" />
-  <link rel="icon" href="./assets/favicon.ico" />
+  <title>Certificates</title>
 
-  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-  <link href="styles.css" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .section-container { padding-top: 80px; }
+
+    .card-container {
+      position: static !important;
+      margin-top: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+    }
+
+    .cert-block { margin-bottom: 35px; }
+
+    .cert-img-container {
+      width: 100%;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fafafa;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 12px;
+    }
+
+    .cert-img-container img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
+
   <div id="site-border-left"></div>
   <div id="site-border-right"></div>
   <div id="site-border-top"></div>
   <div id="site-border-bottom"></div>
 
-  <!-- Header -->
+  <!-- NAVBAR (RESTORED TO ORIGINAL STYLE) -->
   <header>
     <nav class="navbar navbar-fixed-top navbar-default">
       <div class="container">
-        <button type="button"
-                class="navbar-toggle collapsed"
-                data-toggle="collapse"
-                data-target="#navbar-collapse"
-                aria-expanded="false">
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#navbar-collapse"
+          aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -44,108 +79,143 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./skills.html">Tech</a></li>
             <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./certificates.html">Certificates</a></li>
-            <li class="active"><a href="./about.html">About Me</a></li>
+            <li class="active"><a href="./certificates.html">Certificates</a></li>
+            <li><a href="./about.html">About Me</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Content -->
+  <!-- CONTENT -->
   <div class="section-container">
     <div class="container">
 
+      <!-- HEADER -->
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="text-center">
-            <h1 class="h2 section-title">About Me</h1>
+            <h1 class="h2 section-title">Certificates</h1>
           </div>
         </div>
       </div>
 
-      <div class="row content-row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-0">
-
-          <h3>Hey, I'm Brady Blough.</h3>
-
+      <!-- INTRO -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
           <p>
-            I’m a software engineer with a background in regulated production systems and aerospace manufacturing,
-            currently focused on building reliable, safety-conscious software in mission-critical environments.
-            I work primarily with Python, Java, and C, and have experience in scientific computing using NumPy,
-            backend API development, and legacy system maintenance.
+            Selected coursework and certifications focused on scientific computing and space science.
+            These support my interest in mission-focused software, data processing, and building reliable
+            tools for complex systems.
           </p>
+        </div>
+      </div>
 
-          <p>
-            I began my career in aerospace manufacturing in an ITAR-controlled environment, where precision,
-            attention to detail, and quality were essential. That experience shaped how I approach software
-            engineering today: carefully, methodically, and with a strong respect for correctness and reliability.
-          </p>
+      <!-- ROW 1 -->
+      <div class="row">
 
-          <p>
-            I’m particularly interested in space and scientific software, including data processing,
-            mission support systems, and tools that help researchers and engineers make sense of complex systems.
-            I enjoy working on problems where software has real-world impact.
-          </p>
-
-          <p>
-            Outside of work, I’m passionate about learning, building, and continuously improving as an engineer.
-            I’m always looking for opportunities to grow, take on meaningful challenges, and contribute to work that matters.
-          </p>
-
-          <div class="contact-info">
-            <h3>Let's Get in Touch</h3>
-            <ul class="list-unstyled">
-
-              <li>
-                <a href="mailto:bradyblough@gmail.com">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                  Email
-                </a>
-              </li>
-
-              <li>
-                <a href="https://github.com/bradyblough" target="_blank" rel="noopener">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-                  GitHub
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.linkedin.com/in/brady-blough-122238211/" target="_blank" rel="noopener">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  LinkedIn
-                </a>
-              </li>
-
-              <li>
-                <a href="https://docs.google.com/document/d/e/2PACX-1vTv0ZNJ2FtGXo-PUzF8JcnVIFaIskAxr52ZqLYkUsVrh9oci4lclcydNMbo5_L-YaKPT4ZXIHHfUN1O/pub"
-                   target="_blank"
-                   rel="noopener">
-                  <i class="fa fa-file" aria-hidden="true"></i>
-                  Resume
-                </a>
-              </li>
-
-            </ul>
+        <div class="col-sm-6 cert-block">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/freecodecamp_scientific_python.png"
+                 alt="Scientific Computing with Python - freeCodeCamp">
           </div>
-
+          <div class="card-container">
+            <h3>Scientific Computing with Python | freeCodeCamp</h3>
+            <p>
+              Certification covering Python fundamentals, data processing, NumPy-based numerical computation,
+              and algorithmic problem solving (approximately 300 hours of hands-on work).
+            </p>
+          </div>
         </div>
 
-        <div class="col-xs-12 col-md-5 text-center">
-          <div class="rounded-frame">
-            <img src="./assets/images/profil.jpg"
-                 class="img-responsive"
-                 alt="Brady Blough" />
+        <div class="col-sm-6 cert-block">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera YC67X2ZS7V6Z-1.png"
+                 alt="Astronomy: Exploring Time and Space">
+          </div>
+          <div class="card-container">
+            <h3>Astronomy: Exploring Time and Space | University of Arizona</h3>
+            <p>
+              Broad astronomy foundation covering observational methods, galaxies,
+              stellar evolution, cosmology, and astrobiology.
+            </p>
           </div>
         </div>
 
       </div>
+
+      <!-- ROW 2 -->
+      <div class="row">
+
+        <div class="col-sm-6 cert-block">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera 75WJA6YMAT9C-1.png"
+                 alt="From the Big Bang to Dark Energy">
+          </div>
+          <div class="card-container">
+            <h3>From the Big Bang to Dark Energy | University of Tokyo</h3>
+            <p>
+              Introductory cosmology covering the evolution of the universe,
+              dark matter, dark energy, and foundational particle physics concepts.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 cert-block">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera JGDSZXVZ8BXV-1.png"
+                 alt="The Science of the Solar System">
+          </div>
+          <div class="card-container">
+            <h3>The Science of the Solar System | Caltech</h3>
+            <p>
+              Study of solar system formation, planetary science,
+              and comparative planetology, including the search for life beyond Earth.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ROW 3 -->
+      <div class="row">
+
+        <div class="col-sm-6 cert-block">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera PF4QMQVP7DN3-1.png"
+                 alt="AstroTech">
+          </div>
+          <div class="card-container">
+            <h3>AstroTech: Science and Technology Behind Astronomical Discovery | University of Edinburgh</h3>
+            <p>
+              Overview of the tools behind modern astronomy—telescopes,
+              detectors, and instrumentation—and how engineering choices shape outcomes.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 cert-block">
+          <div class="cert-img-container">
+            <img src="./assets/images/certificates_website/Coursera UA5TNAYJ6FTE-1.png"
+                 alt="Data-driven Astronomy">
+          </div>
+          <div class="card-container">
+            <h3>Data-driven Astronomy | University of Sydney</h3>
+            <p>
+              Course focused on analyzing astronomical datasets using scientific Python tools,
+              applying algorithms to extract insights, and introducing ML concepts.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
 
-  <!-- Scripts -->
+  <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
