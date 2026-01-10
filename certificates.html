@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Brady Blough - Software Engineering Projects | Space & Scientific Software">
+  <meta name="description" content="Brady Blough - Certificates | Space, Astronomy, and Scientific Computing">
   <meta name="author" content="Brady Blough">
+
+  <meta name="msapplication-tap-highlight" content="no">
 
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link rel="icon" href="./assets/favicon.ico">
@@ -15,6 +17,44 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <style>
+    .section-container { padding-top: 80px; }
+
+    /* --- Fix template "card overlay" behavior on THIS page --- */
+    .card-container {
+      position: static !important;
+      margin-top: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+    }
+
+    /* Each certificate block spacing */
+    .cert-block { margin-bottom: 35px; }
+
+    /* Make all certificate images render the same visual size */
+    .cert-img-container {
+      width: 100%;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fafafa;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 12px;
+    }
+
+    .cert-img-container img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .btn-container .btn { margin-right: 8px; margin-top: 8px; }
+  </style>
 </head>
 
 <body>
@@ -35,8 +75,8 @@
           <ul class="nav navbar-nav">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./skills.html">Tech</a></li>
-            <li class="active"><a href="./projects.html">Projects</a></li>
-            <li><a href="./certificates.html">Certificates</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li class="active"><a href="./certificates.html">Certificates</a></li>
             <li><a href="./about.html">About Me</a></li>
           </ul>
         </div>
@@ -51,19 +91,19 @@
       <!-- HEADER -->
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-          <div class="text-center">
-            <h1 class="h2 section-title">Certificates</h1>
+          <div class="text-center projects">
+            <h1 class="h2 section-title text-center-xs">Certificates</h1>
           </div>
         </div>
       </div>
 
       <!-- INTRO -->
       <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center-xs">
           <p>
-            Selected coursework and certifications focused on scientific computing and space science.
-            These support my interest in mission-focused software, data processing, and building reliable
-            tools for complex systems.
+            I’m committed to continuous learning, particularly in space science and scientific software.
+            Below are selected courses and certifications I’ve completed, including astronomy fundamentals,
+            cosmology, and hands-on scientific computing with Python and NumPy.
           </p>
         </div>
       </div>
@@ -71,31 +111,43 @@
       <!-- ROW 1 -->
       <div class="row">
 
+        <!-- freeCodeCamp -->
         <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/freecodecamp_scientific_python.png"
-                 alt="Scientific Computing with Python - freeCodeCamp">
+                 alt="Scientific Computing with Python Certification - freeCodeCamp">
           </div>
+
           <div class="card-container">
             <h3>Scientific Computing with Python | freeCodeCamp</h3>
             <p>
-              Certification covering Python fundamentals, data processing, NumPy-based numerical computation,
-              and algorithmic problem solving (approximately 300 hours of hands-on work).
+              Comprehensive certification covering Python fundamentals, data processing, numerical computation with NumPy,
+              algorithmic problem solving, and scientific programming. Represents approximately 300 hours of hands-on coding work.
             </p>
+            <div class="btn-container">
+              <a href="https://www.freecodecamp.org/certification/bradyblough/scientific-computing-with-python-v7"
+                 target="_blank" rel="noopener" class="btn btn-default">Verify Certificate</a>
+            </div>
           </div>
         </div>
 
+        <!-- Arizona -->
         <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera YC67X2ZS7V6Z-1.png"
-                 alt="Astronomy: Exploring Time and Space">
+                 alt="Astronomy: Exploring Time and Space Certificate">
           </div>
+
           <div class="card-container">
             <h3>Astronomy: Exploring Time and Space | University of Arizona</h3>
             <p>
-              Broad astronomy foundation covering observational methods, galaxies,
-              stellar evolution, cosmology, and astrobiology.
+              Broad astronomy foundation covering observational methods, the scientific method, galaxies, stellar evolution,
+              cosmology, and astrobiology.
             </p>
+            <div class="btn-container">
+              <a href="https://www.coursera.org/learn/astro/home/info" target="_blank" rel="noopener"
+                 class="btn btn-default">Course Info</a>
+            </div>
           </div>
         </div>
 
@@ -104,31 +156,45 @@
       <!-- ROW 2 -->
       <div class="row">
 
+        <!-- Tokyo -->
         <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera 75WJA6YMAT9C-1.png"
-                 alt="From the Big Bang to Dark Energy">
+                 alt="From the Big Bang to Dark Energy Certificate">
           </div>
+
           <div class="card-container">
-            <h3>From the Big Bang to Dark Energy | University of Tokyo</h3>
+            <h3>From the Big Bang to Dark Energy | The University of Tokyo</h3>
             <p>
-              Introductory cosmology covering the evolution of the universe,
-              dark matter, dark energy, and foundational particle physics concepts.
+              Introductory cosmology course covering the evolution of the universe, inflation, dark matter, dark energy,
+              and foundational particle physics concepts.
             </p>
+            <div class="btn-container">
+              <a href="https://www.coursera.org/learn/big-bang/home/info" target="_blank" rel="noopener"
+                 class="btn btn-default">Course Info</a>
+              <a href="https://coursera.org/verify/75WJA6YMAT9C" target="_blank" rel="noopener"
+                 class="btn btn-default">Credential</a>
+            </div>
           </div>
         </div>
 
+        <!-- Caltech -->
         <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera JGDSZXVZ8BXV-1.png"
-                 alt="The Science of the Solar System">
+                 alt="The Science of the Solar System Certificate">
           </div>
+
           <div class="card-container">
             <h3>The Science of the Solar System | Caltech</h3>
             <p>
-              Study of solar system formation, planetary science,
-              and comparative planetology, including the search for life beyond Earth.
+              Detailed study of solar system formation, planetary science, and comparative planetology, including
+              the search for life beyond Earth.
             </p>
+            <div class="btn-container">
+              <a href="https://www.coursera.org/learn/solar-system/home/info" target="_blank" rel="noopener"
+                 class="btn btn-default">Course Info</a>
+            </div>
           </div>
         </div>
 
@@ -137,31 +203,43 @@
       <!-- ROW 3 -->
       <div class="row">
 
+        <!-- AstroTech -->
         <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera PF4QMQVP7DN3-1.png"
-                 alt="AstroTech">
+                 alt="AstroTech Certificate">
           </div>
+
           <div class="card-container">
             <h3>AstroTech: Science and Technology Behind Astronomical Discovery | University of Edinburgh</h3>
             <p>
-              Overview of the tools behind modern astronomy—telescopes,
-              detectors, and instrumentation—and how engineering choices shape outcomes.
+              Overview of the tools behind modern astronomy—telescopes, detectors, instrumentation, and how
+              engineering choices shape scientific outcomes.
             </p>
+            <div class="btn-container">
+              <a href="https://www.coursera.org/learn/astronomy-technology/home/info" target="_blank" rel="noopener"
+                 class="btn btn-default">Course Info</a>
+            </div>
           </div>
         </div>
 
+        <!-- Data-driven Astronomy -->
         <div class="col-sm-6 cert-block">
           <div class="cert-img-container">
             <img src="./assets/images/certificates_website/Coursera UA5TNAYJ6FTE-1.png"
-                 alt="Data-driven Astronomy">
+                 alt="Data-driven Astronomy Certificate">
           </div>
+
           <div class="card-container">
-            <h3>Data-driven Astronomy | University of Sydney</h3>
+            <h3>Data-driven Astronomy | The University of Sydney</h3>
             <p>
-              Course focused on analyzing astronomical datasets using scientific Python tools,
-              applying algorithms to extract insights, and introducing ML concepts.
+              Practical course focused on analyzing astronomical datasets using scientific Python tools (including NumPy),
+              applying algorithms to extract insights, and introducing machine learning concepts for astronomy workflows.
             </p>
+            <div class="btn-container">
+              <a href="https://www.coursera.org/learn/data-driven-astronomy/home/info" target="_blank" rel="noopener"
+                 class="btn btn-default">Course Info</a>
+            </div>
           </div>
         </div>
 
@@ -170,8 +248,10 @@
     </div>
   </div>
 
+  <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
